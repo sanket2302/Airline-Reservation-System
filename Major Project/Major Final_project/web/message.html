@@ -1,0 +1,218 @@
+<html>
+
+<head>
+    <title>Leave message</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <link href="CDN/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <script src="CDN/bootstrap.min.js" type="text/javascript"></script>
+  <link href="CDN/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <script src="CDN/jquery.min.js" type="text/javascript"></script>
+  
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+    	
+body{
+	margin-top: 7%;
+	padding: 0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+	z-index: 1;
+	
+	color: black;
+	background-image: url(img/mumbaiblur.jpg);
+	font-family: Arial;
+	background-size: cover;
+	font-size: 12px;
+}
+
+.container
+{
+    margin-top: 10%;
+    background-color: transparent;
+    z-index: calc;
+}
+
+:-webkit-input-placeholder-shown                /* Chrome/Opera/Safari */
+{ 
+  width: 50%;
+}
+
+
+.form-control
+{
+	background-color: transparent;
+                   border: 1.5px solid rgba(255,255,255,0.6);
+}
+
+.form-group
+{
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+.controls input
+{
+	background-color: transparent;
+	border: 1.5px solid rgba(255,255,255,0.6);
+	color:#FFF;
+	font-family: 'Exo', sans-serif;
+}
+
+.controls input[type=submit]
+{
+	background-color: transparent;
+	border: 1.5px solid rgba(255,255,255,0.6);
+	font-family: 'Exo', sans-serif;
+}
+.controls input[type=submit]:hover
+{
+	background-color: #23415C;
+	border: 1.5px solid rgba(255,255,255,0.6);
+	font-family: 'Exo', sans-serif;
+}
+.navbar
+{
+                    margin-top: 0;
+	background-color: #23415C;
+	padding: 1% 0;
+	font-size: 1.2em; 
+}
+
+.navbar img
+{
+	max-height: 70px;
+	max-width: 70px;
+	margin-left: 40px;
+	margin-top: -15px;
+}
+
+.navbar-brand
+{
+	max-height: 20px;
+	max-width:  20px;
+	padding: 10px;
+}
+
+.navbar-default .navbar-nav li a
+{
+	color: #D5D5D5;
+}
+
+.navbar-default .navbar-nav li a:hover ,.navbar-default .navbar-nav li a.active 
+{
+	color: #FFF;
+}
+
+
+    </style>					<!-- Style Over HERE !!-->
+</head>
+					<!-- Head Over here -->
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="sr-only">toggle navigation </span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img\recycle.png">
+      </a>
+    </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse-main">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a class="active" href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="message.html">Contact us</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+
+  </div>  
+  </div>
+</nav>
+    
+    
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2">
+                
+                <h1>Leave us a message, we'll contact you soon !!</h1>
+                
+                <form  id="contact-form" action="contact.jsp" method="post"  role="form">
+
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="Fname" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname</label>
+                                    <input id="form_lastname" type="text" name="Lname" class="form-control" placeholder="Lastname">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required"
+                                        data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_message" id="label">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for us !" rows="4" required="required"
+                                data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+
+                        <input type="submit" class="btn btn-success btn-send" id="sendButton" value="Send message">
+                        <center><p> Fields mark with * are mandatory !</p></center>
+                        
+
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+    </div>
+    <!-- /.container-->
+
+
+
+</body>
+</html>

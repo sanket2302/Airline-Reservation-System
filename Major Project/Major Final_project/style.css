@@ -1,0 +1,116 @@
+
+html, body
+{
+	height:100%;
+	width:100%;
+}
+
+
+.navbar
+{
+	background-color: #23415C;
+	padding: 1% 0;
+	font-size: 1.2em; 
+}
+
+.navbar img
+{
+	max-height: 70px;
+	max-width: 70px;
+	margin-left: 40px;
+	margin-top: -15px;
+}
+.navbar-brand
+{
+	max-height: 20px;
+	max-width:  20px;
+	padding: 10px;
+}
+
+.navbar-default .navbar-nav li a
+{
+	color: #D5D5D5;
+}
+
+.navbar-default .navbar-nav li a:hover ,.navbar-default .navbar-nav li a.active 
+{
+	color: #FFF;
+}
+
+#home
+{
+	background: url(img/mumbai.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.landing-text
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	padding: 100px;
+}
+.landing-text h1
+{
+	font-size: 300%;
+	font-weight:300;
+}
+.padding
+{
+	padding: 80px 0;
+}
+.padding img
+{
+	width: 100%;
+	padding-top: 10px;
+}
+
+#fixed
+{
+	background: url(img/background.jpg) no-repeat center center fixed;
+	display: table;
+	height: 80%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+footer
+{
+	width: 100%;
+	background-color: #23415C;
+	padding: 5% 5% 10% 5%;
+	color:#FFF;
+}
+.fa
+{
+	padding: 15px;
+	font-size: 25px;
+}
+
+.fa:hover
+{
+	color:#FFF;
+	text-decoration: none;
+}
+.icon
+{
+	max-width: 200px;
+}
+@media (max-width: 768px)
+{
+	.landing-text h1
+	{
+		font-size: 300%;
+	}
+	.fa
+	{
+		font-size: 20px;
+		padding:10px;
+	}
+
+}
